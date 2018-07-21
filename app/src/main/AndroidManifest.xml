@@ -27,6 +27,11 @@
             android:label="@string/title_activity_rules"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".ScoreActivity"
+            android:label="@string/title_activity_score"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:screenOrientation="portrait"
             android:name=".AboutActivity"
             android:label="@string/title_activity_about"
             android:theme="@style/AppTheme.NoActionBar"></activity>

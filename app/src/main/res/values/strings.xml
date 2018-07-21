@@ -12,6 +12,8 @@
     <string name="activity_about_desribe">Interactive game</string>
     <string name="activity_about_authors_list">Vladimir Aksenov\nVladimir Sorokin\nDmitry Znobischev\nOlga Ponkratova</string>
     <string name="activity_rules_title">Rules</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_score">History</string>
     <string name="activity_rules_description">
         Main goal of this game is to construct a real word from a given letters set.\nBut beware! You time is limited!\n\nAlso remember, once you constructed wrong word your current game will be reseted.\n\nGood luck!
     </string>

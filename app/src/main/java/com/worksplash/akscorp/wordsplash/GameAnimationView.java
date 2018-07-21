@@ -18,6 +18,8 @@ import java.util.Random;
 
 class GameAnimationView extends View {
 
+    int gameState = 0;
+
     private Random random = new Random();
     /**
      * Class representing the state of a star
@@ -77,7 +79,6 @@ class GameAnimationView extends View {
     private float mBaseSpeed;
     private float mBaseSize;
     private long mCurrentPlayTime;
-
     TextView[] tvHolder;
 
     public String word;
@@ -85,7 +86,7 @@ class GameAnimationView extends View {
     public Integer currentPos = 0;
 
     /** @see View#View(Context) */
-    public GameAnimationView(Context context, String word, TextView[] tvHolder) {
+    public GameAnimationView(Context context, String word, String wordRight, TextView[] tvHolder) {
         super(context);
         this.tvHolder = tvHolder;
         init(word);
@@ -122,6 +123,20 @@ class GameAnimationView extends View {
                         break;
                     }
                 }
+            }
+            if(currentPos == word.length()){
+                String str = "";
+                for(int i = 0; i < tvHolder.length;++i){
+                    str += tvHolder[i].getText().toString();
+                }
+                if(str.equals(word)){
+                    gameState = 1;
+                    return true;
+                }else{
+                    gameState = 2;
+                    return true;
+                }
+
             }
         }
 
