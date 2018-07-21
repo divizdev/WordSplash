@@ -89,6 +89,20 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <Button
+        android:id="@+id/button_share"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_border"
+        android:padding="10dp"
+        android:text="Share"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_next" />
+
+    <Button
         android:id="@+id/button_main_menu"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
@@ -103,5 +117,5 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_next" />
+        app:layout_constraintTop_toBottomOf="@+id/button_share" />
 </android.support.constraint.ConstraintLayout>
