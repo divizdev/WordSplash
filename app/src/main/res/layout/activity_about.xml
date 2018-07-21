@@ -17,37 +17,54 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Word Splash"
             android:layout_gravity="center"
+            android:text="Word Splash"
             android:textSize="24sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Interactive game you never forget"
             android:layout_gravity="center"
-            android:textSize="16sp"/>
+            android:text="Interactive game you never forget"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Authors"/>
+        android:text="@string/activity_about_authors_title"
+        android:padding="16dp"/>
+
     <TextView
+        android:id="@+id/about_tv_authors"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Authors"/>
+        tools:text="Authors"
+        android:padding="16dp"/>
+
     <TextView
+        android:id="@+id/about_tv_fork"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fork us"/>
+        android:text="Fork us"
+        android:padding="16dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_about_line_height"
+        android:layout_margin="@dimen/activity_about_layout_margin"
+        android:background="@color/colorPrimary"/>
+
     <TextView
+        android:id="@+id/about_tv_lisence"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OPEN SOURCE LISENCE"/>
+        tools:text="@string/activity_about_open_source"
+        android:padding="16dp"/>
 </LinearLayout>
