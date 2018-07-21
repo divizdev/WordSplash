@@ -7,6 +7,7 @@
     <string name="title_activity_about">AboutActivity</string>
     <string name="activity_about_title">About</string>
     <string name="activity_about_authors_title">Authors</string>
-    <string name="activity_about_open_source">OPEN SOURCE LISENCE</string>
-    <string name="activity_about_authors_list">Аксенов Владимир\nVladimir Sorokin\nДмитрий\nОльга Понкратова</string>
+    <string name="activity_about_fork">Fork us</string>
+    <string name="activity_about_app_name">Word Splash</string>
+    <string name="activity_about_authors_list">Vladimir Aksenov\nVladimir Sorokin\nDmitry Znobischev\nOlga Ponkratova</string>
 </resources>
