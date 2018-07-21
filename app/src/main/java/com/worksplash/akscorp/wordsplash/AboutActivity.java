@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -12,20 +13,6 @@ import android.widget.TextView;
 import java.util.Objects;
 
 public class AboutActivity extends AppCompatActivity {
-
-    private final View.OnClickListener onClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            switch (v.getId()) {
-                case R.id.about_tv_fork:
-                    String urlFork = "https://github.com/vovaksenov99/WordSplash";
-                    Intent i = new Intent(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse(urlFork));
-                    startActivity(i);
-                    break;
-            }
-        }
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +25,13 @@ public class AboutActivity extends AppCompatActivity {
             Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
+
         TextView forkUs = findViewById(R.id.about_tv_fork);
-        forkUs.setLinkTextColor(getResources().getColor(R.color.colorAccent));
+        forkUs.setMovementMethod(LinkMovementMethod.getInstance());
+        forkUs.setLinkTextColor(getResources().getColor(R.color.white));
+
         TextView authors = findViewById(R.id.about_tv_authors);
         authors.setText(R.string.activity_about_authors_list);
-
-        forkUs.setOnClickListener(onClickListener);
     }
 
     @Override
