@@ -9,5 +9,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
+
+        StarAnimationView  mAnimationView = (StarAnimationView) findViewById(R.id.animated_view);
+        mAnimationView.resume();
     }
 }
