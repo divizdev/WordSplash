@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game1Activity"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_word"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:minWidth="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_timer">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
