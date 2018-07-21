@@ -2,6 +2,7 @@ package com.worksplash.akscorp.wordsplash;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -41,6 +42,9 @@ public class ScoreActivity extends AppCompatActivity {
         ScoreAdapter scoreAdapter = new ScoreAdapter(_list);
         _recyclerView.setAdapter(scoreAdapter);
 
+
+        DialogFragment dialogFragment = DialogScoreFragment.newInstance(_list.get(1));
+        dialogFragment.show(getSupportFragmentManager(), "TEST");
 
 
 

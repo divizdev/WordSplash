@@ -62,7 +62,7 @@ public class DialogScoreFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
-        GameResult gameResult = getArguments().getParcelable(ARG_PARAM);
+        final GameResult gameResult = getArguments().getParcelable(ARG_PARAM);
 
         View view = getActivity().getLayoutInflater().inflate(R.layout.fragment_dialog_score_fragmnet, null, false);
 
@@ -89,7 +89,7 @@ public class DialogScoreFragment extends DialogFragment {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
-                intent.putExtra(Intent.EXTRA_TEXT, "I have " + _gameResult.res + " points in Word Splash");
+                intent.putExtra(Intent.EXTRA_TEXT, "I have " + gameResult.res + " points in Word Splash");
                 getActivity().startActivity(Intent.createChooser(intent, "Share"));
             }
         });
