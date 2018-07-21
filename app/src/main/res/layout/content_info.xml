@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:background="@android:color/black">
 
-    <TextView
+    <Button
         android:id="@+id/info_tv_rules"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_border"
+        android:padding="10dp"
         android:text="@string/info_tv_rules"
-        android:textSize="24sp" />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
-    <TextView
+    <Button
         android:id="@+id/info_tv_about"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_border"
+        android:padding="10dp"
         android:text="@string/info_tv_about"
-        android:textSize="24sp" />
-
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 </LinearLayout>

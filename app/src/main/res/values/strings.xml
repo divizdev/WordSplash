@@ -9,5 +9,6 @@
     <string name="activity_about_authors_title">Authors</string>
     <string name="activity_about_fork">Fork us</string>
     <string name="activity_about_app_name">Word Splash</string>
+    <string name="activity_about_desribe">Interactive game</string>
     <string name="activity_about_authors_list">Vladimir Aksenov\nVladimir Sorokin\nDmitry Znobischev\nOlga Ponkratova</string>
 </resources>

@@ -5,6 +5,7 @@
     android:id="@+id/info_rl_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     android:orientation="vertical"
     tools:context=".InfoActivity">
 
@@ -12,8 +13,9 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        android:background="@color/black"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/InfoSectionToolbar" />
 
     <include layout="@layout/content_info" />
 
