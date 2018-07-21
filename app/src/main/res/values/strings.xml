@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">WordSplash</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="info_tv_rules">Rules</string>
+    <string name="info_tv_about">About</string>
+    <string name="title_activity_rules">RulesActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
 </resources>
