@@ -10,6 +10,8 @@ public class GameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-
+        DialogScoreFragment dialogScoreFragment = DialogScoreFragment.newInstance(new GameResult(2, "test", GameResult.Levels.Easy));
+//        DialogScoreFragment dialogScoreFragment = new DialogScoreFragment();
+        dialogScoreFragment.show(getSupportFragmentManager(), "");
     }
 }
